@@ -1,70 +1,51 @@
-#url: https://y7kim.github.io
-baseurl: "/"
+# Site wide configuration
 
-# Site settings
-title: Random Hacks Of Kindness Banglaore
-email: rishibhatnagar1@gmail.com
-description: "RHOK Bangalore is the Bangalore chapter of Random Hacks of Kindness Global"
+title:
+description:
+logo: # 120x120 px default image used for Twitter summary card
+teaser: # 400x250 px default teaser image used in image archive grid
+locale: en
+url:
 
-# Color settings (hex-codes without the leading hash-tag)
-color:
-  primary: fed136
-  secondary: fec503  
-  secondary-dark: 333
+# Jekyll configuration
 
-# Team names, titles and social links
-people:
-- name: Chinmayi S K
-  pic: 1
-  position: Volunteer
-  social:
-    - title: twitter
-      url: @skchinmayi
-    #- title: facebook
-    #  url: #
-    #- title: stack-overflow
-    #  url: #
+sass:
+  sass_dir: _sass
+  style: compressed
+permalink: /:categories/:title/
+kramdown:
+  toc_levels: 1..2
+highlighter: rouge
+gems:
+  - jekyll-sitemap
+  - jekyll-gist
 
-- name: Rishi Gaurav Bhatnagar
-  pic: 2
-  position: Volunteer
-  social:
-    - title: twitter
-      url: @rishigb
-    #- title: facebook
-    #  url: #
-    #- title: linkedin
-    #  url: #
 
-- name: Yogesh L
-  pic: 3
-  position: Volunteer
-  social:
-    - title: twitter
-      url: @yogi_Londhe 
-    #- title: facebook
-    #  url: #
-    #- title: google-plus
-    #  url: #
+# Octopress configuration
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: http://twitter.com/rhoh_bang
-  - title: facebook
-    url:
-  #- title: stack-overflow
-  #  url: http://stackoverflow.com/questions/tagged/jekyll
-  #- title: bitbucket 
-  #  url: http://bitbucket.org/jekyll
-  - title: github
-    url: https://github.com/rhokbangalore/
+# Default extensions
+post_ext: md
+page_ext: md
 
-# Postal address (add as many lines as necessary)
-address:
-  - line: Bangalore
-  - line: India
+# Found in _templates/
+post_layout: article
+page_layout: article
 
-# Build settings
-markdown: kramdown
-permalink: pretty
+# Format titles with titlecase?
+titlecase: true
+
+
+# Site owner
+owner:
+  name:
+  email:
+  twitter:
+  google:
+    ad-client:
+    ad-slot:
+  bio:
+  avatar: bio-photo.jpg # 160x160 px image for author byline
+  disqus-shortname:
+
+
+exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
